@@ -26,8 +26,8 @@ io.on('connection', socket => {
 
 
 mongoose.connect(
-    //process.env.MONGO_URL, 
-    "mongodb+srv://casis:casis@cluster0-pslzd.mongodb.net/oministack8?retryWrites=true&w=majority",
+    process.env.MONGO_URL, 
+    //"mongodb+srv://casis:casis@cluster0-pslzd.mongodb.net/oministack8?retryWrites=true&w=majority",
     {
     useNewUrlParser: true
     }
