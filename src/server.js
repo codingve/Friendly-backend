@@ -1,5 +1,4 @@
-require("dotenv").config();
-
+// require("dotenv").config();
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -27,7 +26,8 @@ io.on('connection', socket => {
 
 
 mongoose.connect(
-    process.env.MONGO_URL, 
+    //process.env.MONGO_URL, 
+    "mongodb+srv://casis:casis@cluster0-pslzd.mongodb.net/oministack8?retryWrites=true&w=majority",
     {
     useNewUrlParser: true
     }
